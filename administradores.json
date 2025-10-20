@@ -1,0 +1,17 @@
+{
+  "pods": [
+    {
+      "name": "administradores",
+      "label": "Administradores",
+      "description": "Custom post type para administradores do site",
+      "public": false,
+      "has_archive": false,
+      "supports": ["title", "editor"],
+      "fields": [
+        {"name": "usuario", "label": "Usuário", "type": "text"},
+        {"name": "email", "label": "E-mail", "type": "text"},
+        {"name": "nivel_acesso", "label": "Nível de acesso", "type": "pick", "options": ["Admin", "Editor", "Gerente"]}
+      ]
+    }
+  ]
+}
