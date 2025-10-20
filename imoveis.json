@@ -1,0 +1,65 @@
+{
+  "pods": [
+    {
+      "name": "imoveis",
+      "label": "Imóveis",
+      "description": "Custom post type completo para imóveis",
+      "public": true,
+      "has_archive": true,
+      "supports": ["title", "editor", "thumbnail"],
+      "fields": [
+        {"name": "preco", "label": "Preço", "type": "number"},
+        {"name": "area_total", "label": "Área Total (m²)", "type": "number"},
+        {"name": "area_util", "label": "Área Útil (m²)", "type": "number"},
+        {"name": "quartos", "label": "Quartos", "type": "number"},
+        {"name": "banheiros", "label": "Banheiros", "type": "number"},
+        {"name": "garagem", "label": "Vagas na garagem", "type": "number"},
+        {"name": "descricao_curta", "label": "Descrição curta", "type": "text"},
+        {"name": "galeria", "label": "Galeria de imagens", "type": "file", "multiple": true},
+        {
+          "name": "corretor",
+          "label": "Corretor responsável",
+          "type": "relationship",
+          "related_pod": "corretores",
+          "multiple": false
+        },
+        {"name": "piscina", "label": "Piscina", "type": "bool"},
+        {"name": "playground", "label": "Playground", "type": "bool"},
+        {"name": "academia", "label": "Academia", "type": "bool"},
+        {"name": "salao_festas", "label": "Salão de festas", "type": "bool"},
+        {"name": "churrasqueira", "label": "Churrasqueira", "type": "bool"},
+        {"name": "quadra_futebol", "label": "Quadra de futebol", "type": "bool"},
+        {"name": "sauna", "label": "Sauna", "type": "bool"},
+        {"name": "energia_solar", "label": "Energia solar", "type": "bool"},
+        {"name": "taxa_condominio", "label": "Taxa de condomínio", "type": "number"},
+        {"name": "iptu", "label": "IPTU", "type": "number"},
+        {"name": "endereco_rua", "label": "Rua", "type": "text"},
+        {"name": "endereco_numero", "label": "Número", "type": "text"},
+        {"name": "endereco_bairro", "label": "Bairro", "type": "text"},
+        {"name": "endereco_cep", "label": "CEP", "type": "text"}
+      ]
+    }
+  ],
+  "taxonomies": [
+    {
+      "name": "tipo_imovel",
+      "label": "Tipo de Imóvel",
+      "terms": ["Apartamento", "Casa", "Cobertura", "Terreno", "Comercial"]
+    },
+    {
+      "name": "status_imovel",
+      "label": "Status do Imóvel",
+      "terms": ["Disponível", "Vendido", "Alugado"]
+    },
+    {
+      "name": "localizacao",
+      "label": "Localização",
+      "terms": ["João Pessoa", "Campina Grande", "Cabedelo"]
+    },
+    {
+      "name": "faixa_preco",
+      "label": "Faixa de Preço",
+      "terms": ["Até 100.000", "100.000-300.000", "300.000-500.000", "Acima de 500.000"]
+    }
+  ]
+}
