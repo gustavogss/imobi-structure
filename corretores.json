@@ -1,0 +1,18 @@
+{
+  "pods": [
+    {
+      "name": "corretores",
+      "label": "Corretores",
+      "description": "Custom post type para corretores",
+      "public": true,
+      "has_archive": true,
+      "supports": ["title", "editor", "thumbnail"],
+      "fields": [
+        {"name": "telefone", "label": "Telefone", "type": "text"},
+        {"name": "email", "label": "E-mail", "type": "text"},
+        {"name": "foto", "label": "Foto do corretor", "type": "file"},
+        {"name": "creci", "label": "CRECI", "type": "text"}
+      ]
+    }
+  ]
+}
