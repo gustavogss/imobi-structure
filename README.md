@@ -1,52 +1,61 @@
-# imobi-structure
+# imobi-structure ❤️
+
+**Contribuição de Gustavo Souza**  
 
 **Estrutura JSON pronta para sites de imobiliárias**  
 
-O `imobi-structure` é um conjunto de modelos JSON que podem ser usados como **boilerplate** para Pods, taxonomia e outros elementos em sites de imobiliárias. A ideia é agilizar a criação de novos sites, permitindo que você **importe essa estrutura pronta** sempre que precisar iniciar um projeto.
+Este repositório contém modelos JSON para Pods, taxonomias e campos personalizados, prontos para serem importados no WordPress com o plugin **Pods**.  
+A ideia é **facilitar a criação de sites de imobiliárias**, permitindo que você importe apenas os Pods que precisa, funcionando como boilerplate.
 
 ---
 
-## Funcionalidades
+## Pods incluídos
 
-- Estrutura organizada de **Pods** para custom post types.
-- Taxonomias pré-definidas como:
-  - Tipo de imóvel
-  - Status do imóvel
-  - Localização
-  - Faixa de preço
-- Estrutura de campos personalizada para:
-  - Informações de imóveis (quartos, banheiros, área, etc.)
-  - Galeria de imagens
-  - Contato do corretor
-- Fácil importação em qualquer projeto WordPress que use Pods.
-- Reduz o tempo de setup inicial, funcionando como **boilerplate JSON**.
+### 1. Imóveis (`imoveis.json`)
+- Campos: preço, área total, área útil, quartos, banheiros, garagem, descrição curta.
+- Comodidades: piscina, playground, academia, salão de festas, churrasqueira, quadra de futebol, sauna, energia solar.
+- Financeiro: taxa de condomínio, IPTU.
+- Endereço completo: rua, número, bairro, CEP.
+- Relacionamento: corretor responsável (Pod Corretores).
+- Taxonomias: tipo de imóvel, status, localização (cidade), faixa de preço.
+
+### 2. Corretores (`corretores.json`)
+- Campos: nome, telefone, e-mail, CRECI, foto.
+- Relacionamento: usado no Pod Imóveis.
+
+### 3. Administradores (`administradores.json`)
+- Campos: usuário, e-mail, nível de acesso (Admin, Editor, Gerente).
+- Não público, para controle interno.
+
+### 4. Usuários – Alugar/Vender (`usuarios_cliente.json`)
+- Campos: nome, e-mail, telefone, tipo de operação (Alugar/Vender), imóveis relacionados, observações.
+
+### 5. Usuários – Comprar/Vender (`usuarios_comprador.json`)
+- Campos: nome, e-mail, telefone, tipo de operação (Comprar/Vender), preferências do imóvel (cidade, faixa de preço, quartos mínimos), observações.
 
 ---
 
 ## Como usar
 
-1. Faça o download do arquivo JSON do `imobi-structure`.
+1. Faça o download do repositório.
 2. No WordPress, instale e ative o plugin [Pods](https://pods.io/).
 3. Vá em **Pods Admin → Import/Export → Import JSON**.
-4. Selecione o arquivo JSON do `imobi-structure` e clique em **Importar**.
-5. Todos os Custom Post Types, taxonomias e campos personalizados estarão prontos para uso.
+4. Selecione o JSON do Pod que deseja importar.
+5. Todos os campos, taxonomias e relacionamentos estarão prontos para uso.
 
 ---
 
-## Estrutura incluída
+## Contribuições
 
-```json
-{
-  "pods": [
-    {
-      "name": "Imóveis",
-      "fields": ["Título", "Descrição", "Preço", "Quartos", "Banheiros", "Área", "Galeria"]
-    }
-  ],
-  "taxonomies": [
-    "Tipo de Imóvel",
-    "Status do Imóvel",
-    "Localização",
-    "Faixa de Preço"
-  ]
-}
+Contribuições são bem-vindas!  
+Se quiser adicionar novos campos, taxonomias ou melhorar a estrutura, faça um fork e envie um pull request.
+
+---
+
+## Licença
+
+MIT License © 2025
+
+---
+
+❤️ Feito com carinho por Gustavo Souza
