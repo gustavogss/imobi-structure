@@ -1,0 +1,22 @@
+{
+  "pods": [
+    {
+      "name": "usuarios_comprador",
+      "label": "Clientes - Comprar/Vender",
+      "description": "Clientes que desejam comprar ou vender imóveis",
+      "public": true,
+      "has_archive": false,
+      "supports": ["title", "editor"],
+      "fields": [
+        {"name": "nome", "label": "Nome", "type": "text"},
+        {"name": "email", "label": "E-mail", "type": "text"},
+        {"name": "telefone", "label": "Telefone", "type": "text"},
+        {"name": "tipo_operacao", "label": "Tipo de operação", "type": "pick", "options": ["Comprar", "Vender"]},
+        {"name": "cidade_preferencia", "label": "Cidade preferida", "type": "text"},
+        {"name": "faixa_preco", "label": "Faixa de preço", "type": "pick", "options": ["Até 100.000", "100.000-300.000", "300.000-500.000", "Acima de 500.000"]},
+        {"name": "quartos_minimos", "label": "Mínimo de quartos", "type": "number"},
+        {"name": "observacoes", "label": "Observações adicionais", "type": "textarea"}
+      ]
+    }
+  ]
+}

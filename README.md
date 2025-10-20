@@ -1,4 +1,4 @@
-# imobi-structure ❤️
+# imobi-structure 
 
 **Contribuição de Gustavo Souza**  
 
@@ -58,4 +58,4 @@ MIT License © 2025
 
 ---
 
-❤️ Feito com carinho por Gustavo Souza
+ Feito com 💚 por Gustavo Souza
