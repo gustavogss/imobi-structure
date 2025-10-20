@@ -1,0 +1,20 @@
+{
+  "pods": [
+    {
+      "name": "usuarios_cliente",
+      "label": "Clientes - Alugar/Vender",
+      "description": "Clientes que desejam alugar ou vender imóveis",
+      "public": true,
+      "has_archive": false,
+      "supports": ["title", "editor"],
+      "fields": [
+        {"name": "nome", "label": "Nome", "type": "text"},
+        {"name": "email", "label": "E-mail", "type": "text"},
+        {"name": "telefone", "label": "Telefone", "type": "text"},
+        {"name": "tipo_operacao", "label": "Tipo de operação", "type": "pick", "options": ["Alugar", "Vender"]},
+        {"name": "imovel_relacionado", "label": "Imóvel relacionado", "type": "relationship", "related_pod": "imoveis", "multiple": true},
+        {"name": "observacoes", "label": "Observações adicionais", "type": "textarea"}
+      ]
+    }
+  ]
+}
