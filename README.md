@@ -1,7 +1,5 @@
 # imobi-structure 
 
-**Contribuição de Gustavo Souza**  
-
 **Estrutura JSON pronta para sites de imobiliárias**  
 
 Este repositório contém modelos JSON para Pods, taxonomias e campos personalizados, prontos para serem importados no WordPress com o plugin **Pods**.  
